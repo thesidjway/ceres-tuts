@@ -1,0 +1,3 @@
+/home/thesidjway/random/ceres-tuts/build/CMakeFiles/edit_cache.dir
+/home/thesidjway/random/ceres-tuts/build/CMakeFiles/rebuild_cache.dir
+/home/thesidjway/random/ceres-tuts/build/CMakeFiles/Helloworld.dir
