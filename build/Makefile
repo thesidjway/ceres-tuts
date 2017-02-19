@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Analyticdiff
+
+# Build rule for target.
+Analyticdiff: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Analyticdiff
+.PHONY : Analyticdiff
+
+# fast build rule for target.
+Analyticdiff/fast:
+	$(MAKE) -f CMakeFiles/Analyticdiff.dir/build.make CMakeFiles/Analyticdiff.dir/build
+.PHONY : Analyticdiff/fast
+
+#=============================================================================
 # Target rules for targets named Numericdiff
 
 # Build rule for target.
@@ -135,6 +148,33 @@ Helloworld: cmake_check_build_system
 Helloworld/fast:
 	$(MAKE) -f CMakeFiles/Helloworld.dir/build.make CMakeFiles/Helloworld.dir/build
 .PHONY : Helloworld/fast
+
+src/Analytic_diff.o: src/Analytic_diff.cpp.o
+
+.PHONY : src/Analytic_diff.o
+
+# target to build an object file
+src/Analytic_diff.cpp.o:
+	$(MAKE) -f CMakeFiles/Analyticdiff.dir/build.make CMakeFiles/Analyticdiff.dir/src/Analytic_diff.cpp.o
+.PHONY : src/Analytic_diff.cpp.o
+
+src/Analytic_diff.i: src/Analytic_diff.cpp.i
+
+.PHONY : src/Analytic_diff.i
+
+# target to preprocess a source file
+src/Analytic_diff.cpp.i:
+	$(MAKE) -f CMakeFiles/Analyticdiff.dir/build.make CMakeFiles/Analyticdiff.dir/src/Analytic_diff.cpp.i
+.PHONY : src/Analytic_diff.cpp.i
+
+src/Analytic_diff.s: src/Analytic_diff.cpp.s
+
+.PHONY : src/Analytic_diff.s
+
+# target to generate assembly for a file
+src/Analytic_diff.cpp.s:
+	$(MAKE) -f CMakeFiles/Analyticdiff.dir/build.make CMakeFiles/Analyticdiff.dir/src/Analytic_diff.cpp.s
+.PHONY : src/Analytic_diff.cpp.s
 
 src/HelloWorld.o: src/HelloWorld.cpp.o
 
@@ -198,8 +238,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Analyticdiff"
 	@echo "... Numericdiff"
 	@echo "... Helloworld"
+	@echo "... src/Analytic_diff.o"
+	@echo "... src/Analytic_diff.i"
+	@echo "... src/Analytic_diff.s"
 	@echo "... src/HelloWorld.o"
 	@echo "... src/HelloWorld.i"
 	@echo "... src/HelloWorld.s"
