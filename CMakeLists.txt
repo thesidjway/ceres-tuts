@@ -19,3 +19,9 @@ target_link_libraries(Analyticdiff ${CERES_LIBRARIES})
 
 add_executable(Powell src/powell.cpp)
 target_link_libraries(Powell ${CERES_LIBRARIES} ${GFLAGS_LIBRARIES})
+
+add_executable(Funcfit src/funcfit.cpp)
+target_link_libraries(Funcfit ${CERES_LIBRARIES} ${GFLAGS_LIBRARIES})
+
+add_executable(Robustfit src/robustfit.cpp)
+target_link_libraries(Robustfit ${CERES_LIBRARIES} ${GFLAGS_LIBRARIES})

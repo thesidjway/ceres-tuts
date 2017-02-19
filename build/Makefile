@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Robustfit
+
+# Build rule for target.
+Robustfit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Robustfit
+.PHONY : Robustfit
+
+# fast build rule for target.
+Robustfit/fast:
+	$(MAKE) -f CMakeFiles/Robustfit.dir/build.make CMakeFiles/Robustfit.dir/build
+.PHONY : Robustfit/fast
+
+#=============================================================================
 # Target rules for targets named Analyticdiff
 
 # Build rule for target.
@@ -148,6 +161,19 @@ Numericdiff: cmake_check_build_system
 Numericdiff/fast:
 	$(MAKE) -f CMakeFiles/Numericdiff.dir/build.make CMakeFiles/Numericdiff.dir/build
 .PHONY : Numericdiff/fast
+
+#=============================================================================
+# Target rules for targets named Funcfit
+
+# Build rule for target.
+Funcfit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Funcfit
+.PHONY : Funcfit
+
+# fast build rule for target.
+Funcfit/fast:
+	$(MAKE) -f CMakeFiles/Funcfit.dir/build.make CMakeFiles/Funcfit.dir/build
+.PHONY : Funcfit/fast
 
 #=============================================================================
 # Target rules for targets named Helloworld
@@ -243,6 +269,33 @@ src/Numeric_diff.cpp.s:
 	$(MAKE) -f CMakeFiles/Numericdiff.dir/build.make CMakeFiles/Numericdiff.dir/src/Numeric_diff.cpp.s
 .PHONY : src/Numeric_diff.cpp.s
 
+src/funcfit.o: src/funcfit.cpp.o
+
+.PHONY : src/funcfit.o
+
+# target to build an object file
+src/funcfit.cpp.o:
+	$(MAKE) -f CMakeFiles/Funcfit.dir/build.make CMakeFiles/Funcfit.dir/src/funcfit.cpp.o
+.PHONY : src/funcfit.cpp.o
+
+src/funcfit.i: src/funcfit.cpp.i
+
+.PHONY : src/funcfit.i
+
+# target to preprocess a source file
+src/funcfit.cpp.i:
+	$(MAKE) -f CMakeFiles/Funcfit.dir/build.make CMakeFiles/Funcfit.dir/src/funcfit.cpp.i
+.PHONY : src/funcfit.cpp.i
+
+src/funcfit.s: src/funcfit.cpp.s
+
+.PHONY : src/funcfit.s
+
+# target to generate assembly for a file
+src/funcfit.cpp.s:
+	$(MAKE) -f CMakeFiles/Funcfit.dir/build.make CMakeFiles/Funcfit.dir/src/funcfit.cpp.s
+.PHONY : src/funcfit.cpp.s
+
 src/powell.o: src/powell.cpp.o
 
 .PHONY : src/powell.o
@@ -270,6 +323,33 @@ src/powell.cpp.s:
 	$(MAKE) -f CMakeFiles/Powell.dir/build.make CMakeFiles/Powell.dir/src/powell.cpp.s
 .PHONY : src/powell.cpp.s
 
+src/robustfit.o: src/robustfit.cpp.o
+
+.PHONY : src/robustfit.o
+
+# target to build an object file
+src/robustfit.cpp.o:
+	$(MAKE) -f CMakeFiles/Robustfit.dir/build.make CMakeFiles/Robustfit.dir/src/robustfit.cpp.o
+.PHONY : src/robustfit.cpp.o
+
+src/robustfit.i: src/robustfit.cpp.i
+
+.PHONY : src/robustfit.i
+
+# target to preprocess a source file
+src/robustfit.cpp.i:
+	$(MAKE) -f CMakeFiles/Robustfit.dir/build.make CMakeFiles/Robustfit.dir/src/robustfit.cpp.i
+.PHONY : src/robustfit.cpp.i
+
+src/robustfit.s: src/robustfit.cpp.s
+
+.PHONY : src/robustfit.s
+
+# target to generate assembly for a file
+src/robustfit.cpp.s:
+	$(MAKE) -f CMakeFiles/Robustfit.dir/build.make CMakeFiles/Robustfit.dir/src/robustfit.cpp.s
+.PHONY : src/robustfit.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -277,10 +357,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... Robustfit"
 	@echo "... rebuild_cache"
 	@echo "... Analyticdiff"
 	@echo "... Powell"
 	@echo "... Numericdiff"
+	@echo "... Funcfit"
 	@echo "... Helloworld"
 	@echo "... src/Analytic_diff.o"
 	@echo "... src/Analytic_diff.i"
@@ -291,9 +373,15 @@ help:
 	@echo "... src/Numeric_diff.o"
 	@echo "... src/Numeric_diff.i"
 	@echo "... src/Numeric_diff.s"
+	@echo "... src/funcfit.o"
+	@echo "... src/funcfit.i"
+	@echo "... src/funcfit.s"
 	@echo "... src/powell.o"
 	@echo "... src/powell.i"
 	@echo "... src/powell.s"
+	@echo "... src/robustfit.o"
+	@echo "... src/robustfit.i"
+	@echo "... src/robustfit.s"
 .PHONY : help
 
 

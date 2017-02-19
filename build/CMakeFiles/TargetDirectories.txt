@@ -1,6 +1,8 @@
 /home/thesidjway/random/ceres-tuts/build/CMakeFiles/edit_cache.dir
+/home/thesidjway/random/ceres-tuts/build/CMakeFiles/Robustfit.dir
 /home/thesidjway/random/ceres-tuts/build/CMakeFiles/rebuild_cache.dir
 /home/thesidjway/random/ceres-tuts/build/CMakeFiles/Analyticdiff.dir
 /home/thesidjway/random/ceres-tuts/build/CMakeFiles/Powell.dir
 /home/thesidjway/random/ceres-tuts/build/CMakeFiles/Numericdiff.dir
+/home/thesidjway/random/ceres-tuts/build/CMakeFiles/Funcfit.dir
 /home/thesidjway/random/ceres-tuts/build/CMakeFiles/Helloworld.dir

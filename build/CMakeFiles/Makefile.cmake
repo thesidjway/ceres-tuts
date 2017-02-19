@@ -56,8 +56,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/Robustfit.dir/DependInfo.cmake"
   "CMakeFiles/Analyticdiff.dir/DependInfo.cmake"
   "CMakeFiles/Powell.dir/DependInfo.cmake"
   "CMakeFiles/Numericdiff.dir/DependInfo.cmake"
+  "CMakeFiles/Funcfit.dir/DependInfo.cmake"
   "CMakeFiles/Helloworld.dir/DependInfo.cmake"
   )
