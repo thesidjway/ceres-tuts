@@ -186,6 +186,9 @@ GLOG_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 GLOG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglog.so
 
+//The directory containing a CMake configuration file for Gflags.
+Gflags_DIR:PATH=Gflags_DIR-NOTFOUND
+
 //Value Computed by CMake
 ceres-tuts_BINARY_DIR:STATIC=/home/thesidjway/random/ceres-tuts/build
 
@@ -334,6 +337,8 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: EIGEN_INCLUDE_DIR
 EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//Details about finding Gflags
+FIND_PACKAGE_MESSAGE_DETAILS_Gflags:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libgflags.so;-lpthread][google][v()]
 //ADVANCED property for variable: GFLAGS_INCLUDE_DIR
 GFLAGS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Test GFLAGS_IN_GOOGLE_NAMESPACE
